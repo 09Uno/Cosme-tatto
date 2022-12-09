@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+} 
+
+.menu{
+    height: 100px;
+    display: flex;
+    width: 100%;
+    background-color: brown;
+}
+.menuLine{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(137, 104, 104);
+}
+.menuPart1{
+    background-color: aqua;
+}
+
+.menuBrand{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuPart2{
+    background-color: aquamarine;
+}
+.bannerPart1{
+    height: 250px;
+    background-color: beige;
+}
+.bannerPart2{
+    height: 550px;
+    background-color: rgb(70, 70, 41);
+}
+
+.img{
+    margin-left:120px ;
+    height: 650px;
+    width: 450px;
+    background-color: blue;
+    display: flex;
+    margin-top: 100px;
+    z-index:2;
+    position: absolute;
+
+}
+.logoBanner{
+    display: flex;
+    float: right;
+}
+.bannerText{
+    margin-top: 100px;
+    float: right;
+}
+.about{
+    height: 600px;
+}
+
+
+
+    
+@media screen and (max-width: 900px) {
+
+    
+    .bannerPart1{
+        height: 0;
+        width: 0;
+
+    }
+    
+    .img{
+        
+        height: 80%;
+        width: 100%;
+        background-color: blue;
+        display: flex;
+        margin-top: 0;
+        margin-left: auto ;
+        margin-right: auto;
+        justify-content: center;
+        z-index:2;
+        position: absolute;
+    
+    }
+
+  }
