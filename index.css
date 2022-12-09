@@ -1,23 +1,29 @@
-body{
+body {
     margin: 0;
-} 
+}
 
-.menu{
+header {
+    height: auto;
+}
+
+.menu {
     height: 100px;
     display: flex;
     width: 100%;
     background-color: brown;
 }
-.menuLine{
+
+.menuLine {
     height: 40px;
     width: 100%;
     background-color: rgb(137, 104, 104);
 }
-.menuPart1{
+
+.menuPart1 {
     background-color: aqua;
 }
 
-.menuBrand{
+.menuBrand {
     background-color: yellow;
     display: flex;
     width: 20%;
@@ -25,30 +31,41 @@ body{
     align-items: center;
 }
 
-.menuPart2{
+.menuPart2 {
     background-color: aquamarine;
 }
-.bannerPart1{
+
+.bannerPart1 {
     height: 250px;
     background-color: beige;
 }
-.bannerPart2{
+
+.bannerPart2 {
     height: 550px;
     background-color: rgb(70, 70, 41);
 }
 
-.img{
-    margin-left:120px ;
+.img {
+    margin-left: 120px;
     height: 650px;
     width: 450px;
     background-color: blue;
     display: flex;
     margin-top: 100px;
-    z-index:2;
+    z-index: 2;
     position: absolute;
 
 }
-.brandBanner{
+
+.imgText {
+    font-size: 15px;
+    padding: 15px;
+    display: none;
+
+
+}
+
+.brandBanner {
     margin-top: 100px;
     margin-right: auto;
     display: flex;
@@ -57,81 +74,235 @@ body{
     font-size: 40px;
     width: 30%;
 }
-.bannerText{
+
+.bannerText {
     margin-top: 100px;
     float: right;
 }
-.about{
+
+.about {
     height: 600px;
 }
 
+.solution {
+    height: auto;
+    width: 100%;
+    background-color: blueviolet;
+}
 
-@media screen and (max-width:590px) 
- {
+.solutionMain {
+    padding: 60px;
+    text-align: center;
 
-    .menuPart1{
+}
+
+.work {
+    height: auto;
+    background-color: antiquewhite;
+    flex-direction: row;
+}
+
+.tattoos{
+    height: auto;
+    background-color: antiquewhite;
+    flex-direction: row;
+    display: flex;
+}
+
+.workSquare {
+    
+    height: auto;
+    width: auto;
+}
+.square{
+    
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+    margin-left: 120px;
+    background-color: rgb(58, 47, 33);
+}
+.workText {
+    bottom: 40px;
+    position: static;
+    display: flex;
+    height: 0%;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: 39px;
+
+}
+
+.art{
+    height: auto;
+    background-color: antiquewhite;
+    flex-direction: row;
+    display: flex;    
+}
+
+@media screen and (max-width:590px) {
+
+    .menuPart1 {
         background-color: aqua;
         width: 100%;
     }
-    .bannerPart2{
-        height: 0;
-        width: 0;
 
+
+    .bannerPart2 {
+        height: 332px;
+        background-color: rgb(70, 70, 41);
     }
-    .menuBrand{
+
+    .menuBrand {
         background-color: yellow;
         display: flex;
         width: 90%;
         justify-content: center;
         align-items: center;
     }
-    .logoBanner{
+
+    .logoBanner {
         display: none;
         font-size: 00px;
         width: 00;
     }
-    
-    .img{
-        
+
+    .img {
+
         height: 85%;
         width: 100%;
         background-color: blue;
         margin: 0;
         margin-left: 0;
         display: flex;
-        z-index:2;
+        z-index: 2;
         position: absolute;
-    
+
     }
 
+    .imgText {
+        position: absolute;
+        display: flex;
+        bottom: 30px;
+
+    }
+    .work {
+        width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    flex-direction: column;
+    margin: auto;
+    }
+    .tattoos{
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .workSquare {
+    
+        height: auto;
+    }
+    .square{
+        
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        background-color: rgb(58, 47, 33);
+    }
+    .workText {
+        bottom: 40px;
+        display: flex;
+        height: 0%;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 39px;
+    
+    }
+    .art{
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        display: flex;
+    }
+    
 }
 
-    
+
 @media screen and (max-width: 900px) and (min-width:590px) {
 
-    
-    .bannerPart2{
-        height: 0;
-        width: 100%;
 
+
+    .bannerPart2 {
+        height: 460px;
+        background-color: rgb(70, 70, 41);
     }
-    .logoBanner{
+
+    .logoBanner {
         display: none;
         font-size: 00px;
         width: 00;
     }
 
-    .img{
-        
+    .img {
+
         height: 90%;
         width: 75%;
         background-color: blue;
         display: flex;
         margin-top: 50px;
         justify-content: center;
-        z-index:2;
-    
+        z-index: 2;
+
     }
 
-  }
+    .imgText {
+        position: absolute;
+        display: flex;
+        bottom: 30px;
+    }
+    .work {
+        width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    flex-direction: column;
+    margin: auto;
+    }
+    .tattoos{
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        display: flex;
+    }
 
+    .workSquare {
+    
+        height: auto;
+    }
+    .square{
+        
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        background-color: rgb(58, 47, 33);
+    }
+    .workText {
+        bottom: 40px;
+        display: flex;
+        height: 0%;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 39px;
+    
+    }
+    .art{
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        display: flex;
+    }
+
+
+
+}
