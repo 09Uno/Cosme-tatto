@@ -20,6 +20,7 @@ body{
 .menuBrand{
     background-color: yellow;
     display: flex;
+    width: 20%;
     justify-content: center;
     align-items: center;
 }
@@ -47,9 +48,14 @@ body{
     position: absolute;
 
 }
-.logoBanner{
+.brandBanner{
+    margin-top: 100px;
+    margin-right: auto;
     display: flex;
+    flex-direction: column;
     float: right;
+    font-size: 40px;
+    width: 30%;
 }
 .bannerText{
     margin-top: 100px;
@@ -60,30 +66,72 @@ body{
 }
 
 
+@media screen and (max-width:590px) 
+ {
 
-    
-@media screen and (max-width: 900px) {
-
-    
-    .bannerPart1{
+    .menuPart1{
+        background-color: aqua;
+        width: 100%;
+    }
+    .bannerPart2{
         height: 0;
         width: 0;
 
     }
+    .menuBrand{
+        background-color: yellow;
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoBanner{
+        display: none;
+        font-size: 00px;
+        width: 00;
+    }
     
     .img{
         
-        height: 80%;
+        height: 85%;
         width: 100%;
         background-color: blue;
+        margin: 0;
+        margin-left: 0;
         display: flex;
-        margin-top: 0;
-        margin-left: auto ;
-        margin-right: auto;
-        justify-content: center;
         z-index:2;
         position: absolute;
     
     }
 
+}
+
+    
+@media screen and (max-width: 900px) and (min-width:590px) {
+
+    
+    .bannerPart2{
+        height: 0;
+        width: 100%;
+
+    }
+    .logoBanner{
+        display: none;
+        font-size: 00px;
+        width: 00;
+    }
+
+    .img{
+        
+        height: 90%;
+        width: 75%;
+        background-color: blue;
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        z-index:2;
+    
+    }
+
   }
+
