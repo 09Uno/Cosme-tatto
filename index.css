@@ -363,5 +363,9 @@ header {
 
     }
 
+    .header .logo {
 
+        margin-left: 10px !important;
+
+    }
 }
