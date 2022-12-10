@@ -5,21 +5,35 @@
     <title>Cosme.Tattoo</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/galery.css">
+    <link rel="stylesheet" href="assets/css/responsiveMenu.css">
+
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-
+    <header>
 
 
 
         <div class="menu">
-            <div class="menuBrand">LOGO</div>
-            <div class="menuPart1"></div>
+
+            <div class="header">
+
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <a href="" class="logo">LOGO</a>
+                <ul class="menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#galery">GALERIA</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
+                </ul>
+            </div>
 
         </div>
         </div>
@@ -29,10 +43,18 @@
 
         <div class="bannerPart1 ">
             <div class="img ">
-                <p class="imgText">ault model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                    their infancy.
-                    Various versions have evolved over the
-                    years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                <div class="imgText">
+                <h2>Lorem Ipsum</h2>
+                    <p>
+
+                        years, sometimes by accident, sometimes on purpose (injected humour and the like).<br /><br />
+
+                        sault model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                        their infancy.
+
+                        years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+                </div>
             </div>
             <div class="brandBanner">LOGO</div>
         </div>
@@ -41,8 +63,18 @@
 
         <div class="bannerPart2">
             <div class="partEmpty"> </div>
-            <div class="">
-                <p class="bannerText"></p>
+
+            <div class="bannerText">
+                <h2>Lorem Ipsum</h2>
+                <p>sault
+                    years, sometimes by accident, sometimes on purpose (injected humour and the like).<br /><br />
+
+                    sault model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                    their infancy.
+
+                    years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+
 
             </div>
 
@@ -53,6 +85,7 @@
     <main class="main">
         <div class="solution">
             <div class="solutionMain">
+                <div class="solutionText">
                 <h2>psum is simply dummy text of the printing and </h2>
                 <p>psum is simps a long established fact that a reader will
                     be distracted by the readable content of a page when looking at its layout.
@@ -61,12 +94,13 @@
                     here', making
                     it look like readable English. Many desktop publishing packages and web page ely dummy text of the
                     printing and </p>
+                </div>
             </div>
         </div>
 
         <div class="work">
 
-            <div class="tattoos">
+            <div class="tattoos" id="squareLeft">
                 <div class="workSquare">
                     <div class="square">
 
@@ -84,7 +118,7 @@
                 </div>
             </div>
 
-            <div class="art">
+            <div class="art" id="squareRigt">
                 <div class="workSquare">
                     <div class="square">
 
@@ -102,6 +136,228 @@
                 </div>
             </div>
         </div>
+        <div class="break">
+            <h2>GALERIA</h2>
+        </div>
+
+        <div class="galeryMain">
+            <div class="galery1">
+                <h2>TATTOOS</h2>
+                <div class="tattooGalery">
+
+                    <div class="gallery">
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/_cvwXhGqG-o/300x300"
+                                        alt="Portrait by Jessica Felicio" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@oladimeg" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/AHBvAIVqk64/300x500"
+                                        alt="Portrait by Oladimeji Odunsi" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Oladimeji Odunsi</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/VLPLo-GtrIE/300x300"
+                                        alt="Portrait by Alex Perez" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/AR7aumwKr2s/300x300"
+                                        alt="Portrait by Noah Buscher" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/dnL6ZIpht2s/300x300"
+                                        alt="Portrait by Ivana Cajina" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@samburriss" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/tV_1sC603zA/300x500"
+                                        alt="Portrait by Sam Burriss" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Sam Burriss</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@marilezhava" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/Xm9-vA_bhm0/300x500"
+                                        alt="Portrait by Mari Lezhava" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Mari Lezhava</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/NTjSR3zYpsY/300x300"
+                                        alt="Portrait by Ethan Haddox" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/2JH8d3ChNec/300x300"
+                                        alt="Portrait by Amir Geshani" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/FQhLLehm4dk/300x300"
+                                        alt="Portrait by Guilian Fremaux" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/OQd9zONSx7s/300x300"
+                                        alt="Portrait by Jasmin Chew" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/XZkEhowjx8k/300x500"
+                                        alt="Portrait by Dima DallAcqua" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <h2>QUADROS && DESENHOS</h2>
+                <div class="artGalery">
+                    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+                        rel="stylesheet">
+
+                    <div class="gallery">
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/_cvwXhGqG-o/300x300"
+                                        alt="Portrait by Jessica Felicio" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
+                                </figure>
+                            </a>
+
+
+
+                            <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/VLPLo-GtrIE/300x300"
+                                        alt="Portrait by Alex Perez" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/AR7aumwKr2s/300x300"
+                                        alt="Portrait by Noah Buscher" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/dnL6ZIpht2s/300x300"
+                                        alt="Portrait by Ivana Cajina" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
+                                </figure>
+                            </a>
+
+
+                        </div>
+
+                        <div class="gallery__column">
+
+                            <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/NTjSR3zYpsY/300x300"
+                                        alt="Portrait by Ethan Haddox" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/2JH8d3ChNec/300x300"
+                                        alt="Portrait by Amir Geshani" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/FQhLLehm4dk/300x300"
+                                        alt="Portrait by Guilian Fremaux" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/OQd9zONSx7s/300x300"
+                                        alt="Portrait by Jasmin Chew" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
+                                </figure>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutMain">
+
+        </div>
+        
+        <div class="contactMain">
+
+        </div>
+
+        <footer>
+
+        </footer>
+
 
         </div>
 

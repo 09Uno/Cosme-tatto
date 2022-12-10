@@ -7,9 +7,7 @@ header {
 }
 
 .menu {
-    height: 100px;
-    display: flex;
-    width: 100%;
+
     background-color: brown;
 }
 
@@ -19,24 +17,9 @@ header {
     background-color: rgb(137, 104, 104);
 }
 
-.menuPart1 {
-    background-color: aqua;
-}
-
-.menuBrand {
-    background-color: yellow;
-    display: flex;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-}
-
-.menuPart2 {
-    background-color: aquamarine;
-}
 
 .bannerPart1 {
-    height: 250px;
+    height: 300px;
     background-color: beige;
 }
 
@@ -66,7 +49,7 @@ header {
 }
 
 .brandBanner {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-right: auto;
     display: flex;
     flex-direction: column;
@@ -76,8 +59,10 @@ header {
 }
 
 .bannerText {
-    margin-top: 100px;
+    margin-top: 260px;
     float: right;
+    width: 40%;
+    margin-right: 20%;
 }
 
 .about {
@@ -93,16 +78,25 @@ header {
 .solutionMain {
     padding: 60px;
     text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
 
+}
+
+.solutionText {
+    padding-right: 120px;
+    padding-left: 120px;
 }
 
 .work {
     height: auto;
     background-color: antiquewhite;
     flex-direction: row;
+    padding-right: 120px;
+    padding-left: 120px;
 }
 
-.tattoos{
+.tattoos {
     height: auto;
     background-color: antiquewhite;
     flex-direction: row;
@@ -110,42 +104,51 @@ header {
 }
 
 .workSquare {
-    
+
     height: auto;
     width: auto;
 }
-.square{
-    
+
+.square {
+
     height: 300px;
     width: 300px;
     margin: 40px;
-    margin-left: 120px;
+    margin-left: 30px;
     background-color: rgb(58, 47, 33);
 }
+
+#squareLeft {}
+
+#squareLeft {}
+
 .workText {
-    bottom: 40px;
     position: static;
     display: flex;
     height: 0%;
     width: 50%;
-    margin-top: auto;
-    margin-bottom: 39px;
-
+    margin-top: 20px;
+    padding: 30px;
+    text-align: justify;
+    padding-top: 17%;
 }
 
-.art{
+.art {
     height: auto;
     background-color: antiquewhite;
-    flex-direction: row;
-    display: flex;    
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.galeryMain {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 @media screen and (max-width:590px) {
 
-    .menuPart1 {
-        background-color: aqua;
-        width: 100%;
-    }
+
 
 
     .bannerPart2 {
@@ -153,12 +156,11 @@ header {
         background-color: rgb(70, 70, 41);
     }
 
-    .menuBrand {
-        background-color: yellow;
-        display: flex;
-        width: 90%;
-        justify-content: center;
-        align-items: center;
+
+    .bannerText {
+        display: none;
+        font-size: 00px;
+        width: 00;
     }
 
     .logoBanner {
@@ -169,7 +171,6 @@ header {
 
     .img {
 
-        height: 85%;
         width: 100%;
         background-color: blue;
         margin: 0;
@@ -183,17 +184,22 @@ header {
     .imgText {
         position: absolute;
         display: flex;
+        flex-direction: column;
         bottom: 30px;
 
     }
+
     .work {
+        padding-left: 20px;
+        padding-right: 20px;
         width: 100%;
-    height: auto;
-    background-color: antiquewhite;
-    flex-direction: column;
-    margin: auto;
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        margin: auto;
     }
-    .tattoos{
+
+    .tattoos {
         height: auto;
         background-color: antiquewhite;
         flex-direction: column;
@@ -201,33 +207,59 @@ header {
     }
 
     .workSquare {
-    
+
         height: auto;
     }
-    .square{
-        
+
+    .square {
+
         height: 300px;
         width: 300px;
         margin: auto;
+        margin-top: 5px;
         background-color: rgb(58, 47, 33);
     }
+
     .workText {
         bottom: 40px;
         display: flex;
         height: 0%;
         width: 100%;
-        margin-top: auto;
-        margin-bottom: 39px;
-    
+        padding-top: 0;
+        text-align: center;
+
     }
-    .art{
+
+    .art {
         height: auto;
         background-color: antiquewhite;
         flex-direction: column;
         display: flex;
     }
-    
+
+    .solutionMain {
+        padding: 60px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .solutionText {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .header .logo {
+
+        margin-left: 10px !important;
+
+    }
+
 }
+
+
+
 
 
 @media screen and (max-width: 900px) and (min-width:590px) {
@@ -247,29 +279,37 @@ header {
 
     .img {
 
-        height: 90%;
         width: 75%;
         background-color: blue;
         display: flex;
-        margin-top: 50px;
+        margin-top: 80px;
         justify-content: center;
         z-index: 2;
+        margin-left: 15%;
+    }
 
+    .bannerText {
+        display: none;
+        font-size: 00px;
+        width: 00;
     }
 
     .imgText {
         position: absolute;
         display: flex;
+        flex-direction: column;
         bottom: 30px;
     }
+
     .work {
         width: 100%;
-    height: auto;
-    background-color: antiquewhite;
-    flex-direction: column;
-    margin: auto;
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        margin: auto;
     }
-    .tattoos{
+
+    .tattoos {
         height: auto;
         background-color: antiquewhite;
         flex-direction: column;
@@ -277,32 +317,51 @@ header {
     }
 
     .workSquare {
-    
+
         height: auto;
     }
-    .square{
-        
+
+    .square {
+
         height: 300px;
         width: 300px;
         margin: auto;
         background-color: rgb(58, 47, 33);
     }
+
     .workText {
-        bottom: 40px;
         display: flex;
         height: 0%;
         width: 100%;
-        margin-top: auto;
-        margin-bottom: 39px;
-    
+        padding-top: 0;
+        text-align: center;
+
     }
-    .art{
+
+    .art {
         height: auto;
         background-color: antiquewhite;
         flex-direction: column;
         display: flex;
     }
 
+    .solutionMain {
+        padding: 60px;
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .solutionText {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .header .logo {
+
+        margin-left: 10px !important;
+
+    }
 
 
 }
