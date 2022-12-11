@@ -1,9 +1,13 @@
 body {
     margin: 0;
+    background-image: url('./imgs/exemp-banner-2.jpg');
+
+
 }
 
 header {
     height: auto;
+
 }
 
 .menu {
@@ -14,26 +18,28 @@ header {
 .menuLine {
     height: 40px;
     width: 100%;
-    background-color: rgb(137, 104, 104);
+
 }
 
 
 .bannerPart1 {
     height: 300px;
-    background-color: beige;
+    background-image: url('./imgs/exemp-banner-2.jpg');
+
 }
 
 .bannerPart2 {
     height: 550px;
-    background-color: rgb(70, 70, 41);
+    background-color: rgb(232, 232, 232);
 }
 
 .img {
-    margin-left: 120px;
+    margin-left: 80px;
     height: 650px;
     width: 450px;
-    background-color: blue;
     display: flex;
+    background-image: url('./imgs/exem-banner-1.jpg');
+    background-size: contain;
     margin-top: 100px;
     z-index: 2;
     position: absolute;
@@ -59,10 +65,10 @@ header {
 }
 
 .bannerText {
-    margin-top: 260px;
+    margin-top: 190px;
     float: right;
     width: 40%;
-    margin-right: 20%;
+    margin-right: 80px;
 }
 
 .about {
@@ -72,39 +78,45 @@ header {
 .solution {
     height: auto;
     width: 100%;
-    background-color: blueviolet;
+    background-color: rgb(120, 185, 112);
+
+
 }
 
 .solutionMain {
     padding: 60px;
     text-align: center;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-right: 80px;
+    padding-left: 80px;
+
 
 }
 
 .solutionText {
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
 }
 
 .work {
     height: auto;
-    background-color: antiquewhite;
     flex-direction: row;
-    padding-right: 120px;
-    padding-left: 120px;
+
+    
 }
 
 .tattoos {
     height: auto;
-    background-color: antiquewhite;
     flex-direction: row;
     display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(232, 232, 232);
+
 }
 
 .workSquare {
-
+    
     height: auto;
     width: auto;
 }
@@ -113,14 +125,18 @@ header {
 
     height: 300px;
     width: 300px;
-    margin: 40px;
-    margin-left: 30px;
+    margin:auto;
+    padding-right: 80px;
+    padding-left: 80px;
     background-color: rgb(58, 47, 33);
 }
 
-#squareLeft {}
+#squareLeft {
+    align-items: flex-end;
+    
+}
 
-#squareLeft {}
+
 
 .workText {
     position: static;
@@ -131,138 +147,37 @@ header {
     padding: 30px;
     text-align: justify;
     padding-top: 17%;
+    align-items: flex-end;
+
 }
 
 .art {
     height: auto;
-    background-color: antiquewhite;
     flex-direction: row-reverse;
     display: flex;
+    background-color: rgb(232, 232, 232);
+    
+
+
 }
 
 .galeryMain {
-    display: flex;
+    background-color: rgb(120, 185, 112);
+    padding-right: 80px;
+    padding-left: 70px; 
+
+}
+.break{
+    height: 50px;
+    width: 100%;
     justify-content: center;
+    display: flex;
     padding: 10px;
-}
-
-@media screen and (max-width:590px) {
-
-
-
-
-    .bannerPart2 {
-        height: 332px;
-        background-color: rgb(70, 70, 41);
-    }
-
-
-    .bannerText {
-        display: none;
-        font-size: 00px;
-        width: 00;
-    }
-
-    .logoBanner {
-        display: none;
-        font-size: 00px;
-        width: 00;
-    }
-
-    .img {
-
-        width: 100%;
-        background-color: blue;
-        margin: 0;
-        margin-left: 0;
-        display: flex;
-        z-index: 2;
-        position: absolute;
-
-    }
-
-    .imgText {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        bottom: 30px;
-
-    }
-
-    .work {
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 100%;
-        height: auto;
-        background-color: antiquewhite;
-        flex-direction: column;
-        margin: auto;
-    }
-
-    .tattoos {
-        height: auto;
-        background-color: antiquewhite;
-        flex-direction: column;
-        display: flex;
-    }
-
-    .workSquare {
-
-        height: auto;
-    }
-
-    .square {
-
-        height: 300px;
-        width: 300px;
-        margin: auto;
-        margin-top: 5px;
-        background-color: rgb(58, 47, 33);
-    }
-
-    .workText {
-        bottom: 40px;
-        display: flex;
-        height: 0%;
-        width: 100%;
-        padding-top: 0;
-        text-align: center;
-
-    }
-
-    .art {
-        height: auto;
-        background-color: antiquewhite;
-        flex-direction: column;
-        display: flex;
-    }
-
-    .solutionMain {
-        padding: 60px;
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-
-    .solutionText {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    .header .logo {
-
-        margin-left: 10px !important;
-
-    }
-
+    background-color: aliceblue;
 }
 
 
-
-
-
-@media screen and (max-width: 900px) and (min-width:590px) {
+@media screen and (max-width: 1050px) and (min-width:590px) {
 
 
 
@@ -362,6 +277,134 @@ header {
         margin-left: 10px !important;
 
     }
+    .galeryMain {
+    
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
 
+}
+
+@media screen and (max-width:590px) {
+
+
+
+
+    .bannerPart2 {
+        height: 332px;
+        background-color: rgb(70, 70, 41);
+    }
+
+
+    .bannerText {
+        display: none;
+        font-size: 00px;
+        width: 00;
+    }
+
+    .logoBanner {
+        display: none;
+        font-size: 00px;
+        width: 00;
+    }
+
+    .img {
+
+        width: 100%;
+        background-color: blue;
+        margin: 0;
+        margin-left: 0;
+        display: flex;
+        z-index: 2;
+        position: absolute;
+
+    }
+
+    .imgText {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: 30px;
+
+    }
+
+    .work {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .tattoos {
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .workSquare {
+
+        height: auto;
+    }
+
+    .square {
+
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        margin-top: 5px;
+        background-color: rgb(58, 47, 33);
+    }
+
+    .workText {
+        bottom: 40px;
+        display: flex;
+        height: 0%;
+        width: 100%;
+        padding-top: 0;
+        text-align: center;
+        align-items: flex-end;
+
+    }
+
+    .art {
+        height: auto;
+        background-color: antiquewhite;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .solutionMain {
+        padding: 60px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .solutionText {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .header .logo {
+
+        margin-left: 10px !important;
+
+    }
+    #squareLeft {
+        align-items: center;
+        
+    }
+    .galeryMain {
+    
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
 
 }

@@ -11,10 +11,10 @@ body {
   /* header */
   
   .header {
-    background-color: #fff;
+    background-color: rgb(120, 185, 112);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
-    justify-content: space-evenly;
+    justify-content: end;
     width: 100%;
     z-index: 3;
     
@@ -26,6 +26,7 @@ body {
     list-style: none;
     overflow: hidden;
     background-color: #fff;
+
   }
   
   
@@ -38,7 +39,10 @@ body {
   
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #f4f4f4;
+
+    background-color: rgb(120, 185, 112);
+    text-decoration: none;
+    
   }
   
   .header .logo {
@@ -46,7 +50,7 @@ body {
     float: left;
     font-size: 2em;
     padding: 10px 20px;
-    margin-left:120px;
+    margin-left:80px;
     text-decoration: none;
   }
   
@@ -55,8 +59,11 @@ body {
   .header .menu {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
-    margin-right: 20%;
+    transition: max-height 1.2s ease-out;
+    margin-right: 0px;
+    text-decoration: none;
+    background-color: rgb(120, 185, 112);
+
   }
   
   /* menu icon */
