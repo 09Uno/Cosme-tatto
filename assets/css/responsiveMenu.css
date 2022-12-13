@@ -11,7 +11,9 @@ body {
   /* header */
   
   .header {
-    background-color: rgb(120, 185, 112);
+    background-image: url('../../imgs/1.png');
+    background-size: cover;
+    background-color: rgba(120, 185, 112, 0);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     justify-content: end;
@@ -40,7 +42,6 @@ body {
   .header li a:hover,
   .header .menu-btn:hover {
 
-    background-color: rgb(120, 185, 112);
     text-decoration: none;
     
   }
@@ -62,7 +63,7 @@ body {
     transition: max-height 1.2s ease-out;
     margin-right: 0px;
     text-decoration: none;
-    background-color: rgb(120, 185, 112);
+    background-color: rgba(120, 185, 112, 0);
 
   }
   
