@@ -1,11 +1,11 @@
 @font-face {
     font-family: beardsons;
-    src: url("./plugins/fontes/beardsons/Beardsons\ -\ Normal.otf") ;
+    src: url("./plugins/fontes/beardsons/Beardsons\ -\ Normal.otf");
 }
 
 @font-face {
     font-family: long-shot;
-    src: url("./plugins/fontes/long_shot/Long_Shot.ttf") ;
+    src: url("./plugins/fontes/long_shot/Long_Shot.ttf");
 }
 
 body {
@@ -14,7 +14,6 @@ body {
 
 header {
     height: auto;
-    
 
 }
 
@@ -23,14 +22,17 @@ h2 {
     justify-content: center;
     font-size: 0px;
     font-weight: 600;
-    font-family:beardsons;
+    font-family: beardsons;
 
 }
 
 .menu {
-    font-family: long-shot;
-    font-size: 25px;
+    font-family: sans-serif;
+    font-size: 15px;
     font-weight: lighter;
+    color: white;
+
+
 
 }
 
@@ -42,15 +44,36 @@ h2 {
 
 
 .bannerPart1 {
-    height: 300px;
+    height: 370px;
     background-image: url('./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png');
     background-size: contain;
 }
 
 .bannerPart2 {
-    height: 550px;
+    height: 500px;
     background-color: rgb(232, 232, 232);
-    background-size: auto;
+    background-image: url('./imgs/Green\ White\ School\ Supplies\ Zoom\ Background.png');
+    background-size: cover;
+    border-bottom: solid rgb(26, 72, 19) 7px;
+
+}
+
+.bannerPart2Link {
+    height: 50px;
+    background-color: white;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+
+}
+
+.bannerPart2LinkMobile {
+    display: none;
 }
 
 .img {
@@ -76,33 +99,45 @@ h2 {
 }
 
 .brandBanner {
-    margin-top: 80px;
-    margin-right: auto;
     display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
     flex-direction: column;
     float: right;
-    font-size: 40px;
+    height: auto;
     width: 40%;
+
 }
 
-.brandBanner img{
-    margin-right: 200px;
-    
+.brandBanner img {
+
+    height: 270px;
+    width: 350px;
+    margin-top: 101px;
 }
 
-.brand img{
+.brand img {
     margin-left: 80px;
-    height: 60px;
+    height: 70px;
     width: auto;
     padding: 5px;
 }
 
 .bannerText {
-    margin-top: 190px;
+    margin-top: 170px;
     float: right;
     width: 40%;
     margin-right: 80px;
+    color: white;
 }
+
+.bannerText p {
+    position: relative;
+    left: 100%;
+}
+
+
 
 .about {
     height: 600px;
@@ -111,7 +146,6 @@ h2 {
 .solution {
     height: auto;
     width: 100%;
-    background-image: url('../../imgs/1.png');
 
 
 }
@@ -145,6 +179,18 @@ h2 {
     padding-right: 10px;
     padding-left: 10px;
     background-color: rgb(232, 232, 232);
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+.art {
+    height: auto;
+    flex-direction: row-reverse;
+    display: flex;
+    background-color: rgb(232, 232, 232);
+    margin-left: 80px;
+    margin-right: 80px;
+
 
 }
 
@@ -184,15 +230,7 @@ h2 {
 
 }
 
-.art {
-    height: auto;
-    flex-direction: row-reverse;
-    display: flex;
-    background-color: rgb(232, 232, 232);
 
-
-
-}
 
 .galeryMain {
 
@@ -204,12 +242,15 @@ h2 {
 }
 
 .break {
-    height: 50px;
+    height: 70px;
     width: 100%;
     justify-content: center;
     display: flex;
     padding: 10px;
     background-color: aliceblue;
+    background-image: url('./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png');
+    background-size: contain;
+
 }
 
 .about {
@@ -359,9 +400,24 @@ input:focus {
 }
 
 
+
+@media screen and (max-width: 1051px) and (min-width:1500px) {
+    .brandBanner {
+        margin-top: 20px;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        font-size: 40px;
+        height: auto;
+        width: 30%;
+    }
+
+}
+
 @media screen and (max-width: 1050px) and (min-width:590px) {
 
-    .brand img{
+    .brand img {
         margin-left: 20px;
         height: 60px;
         width: auto;
@@ -388,7 +444,7 @@ input:focus {
         justify-content: center;
         z-index: 2;
         margin-left: 15%;
-        
+
     }
 
     .bannerText {
@@ -407,6 +463,36 @@ input:focus {
         color: azure;
     }
 
+    .bannerPart2Link {
+        height: 0px;
+        width: 0%;
+        font-size: 0;
+    }
+
+    .bannerPart2LinkMobile {
+        height: 50px;
+        width: 100%;
+        font-size: 10px;
+        margin-top: 10px;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        border: solid 1px;
+        align-items: center;
+        text-decoration: none;
+        font-size: 15px;
+        background-color: white;
+
+    }
+
+    .brandBanner img {
+
+        height: 0;
+        display: none;
+        width: 0;
+    }
+
+
     .work {
         width: 100%;
         height: auto;
@@ -420,6 +506,7 @@ input:focus {
         background-color: antiquewhite;
         flex-direction: column;
         display: flex;
+        
     }
 
     .workSquare {
@@ -559,12 +646,18 @@ input:focus {
 @media screen and (max-width:590px) {
 
 
-    .brand img{
+    .brand img {
         margin-left: 20px;
         height: 60px;
         width: auto;
     }
 
+    .brandBanner img {
+
+        height: 0;
+        display: none;
+        width: 0;
+    }
 
     .bannerPart2 {
         height: 332px;
@@ -606,6 +699,27 @@ input:focus {
         font-size: 15px;
         color: azure;
 
+    }
+
+    .bannerPart2Link {
+        height: 0px;
+        width: 0%;
+        font-size: 0;
+
+    }
+    .bannerPart2LinkMobile {
+        height: 50px;
+        width: 100%;
+        font-size: 10px;
+        margin-top: 10px;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        border: solid 1px;
+        align-items: center;
+        text-decoration: none;
+        font-size: 15px;
+        background-color: white;
     }
 
     .work {
