@@ -1,0 +1,51 @@
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+
+.bannerPart2LinkMobile {
+    border-color: rgb(63, 131, 30);
+    border-radius: 0;
+    color: rgb(63, 131, 30) !;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    height: 50px;
+        width: 100%;
+        font-size: 10px;
+        margin-top: 10px;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        border: solid 1px;
+        align-items: center;
+        text-decoration: none;
+        font-size: 15px;
+        background-color: white;
+  }
+  .bannerPart2LinkMobile:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: rgb(63, 131, 30);
+    ;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+  }
+  .bannerPart2LinkMobile:hover {
+    color: #fff;
+  }
+  .bannerPart2LinkMobile:hover:after {
+    width: 110%;
+  }

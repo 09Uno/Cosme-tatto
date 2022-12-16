@@ -8,6 +8,11 @@
     src: url("./plugins/fontes/long_shot/Long_Shot.ttf");
 }
 
+a:hover {
+    text-decoration: none !important;
+    color: rgb(248, 248, 248) !important;
+}
+
 body {
     margin: 0;
 }
@@ -55,12 +60,13 @@ h2 {
     background-image: url('./imgs/Green\ White\ School\ Supplies\ Zoom\ Background.png');
     background-size: cover;
     border-bottom: solid rgb(26, 72, 19) 7px;
+    color: rgb(26, 72, 19) !important;
 
 }
 
 .bannerPart2Link {
     height: 50px;
-    background-color: white;
+    background-color: rgb(26, 72, 19);
     text-decoration: none;
     position: relative;
     float: right;
@@ -69,8 +75,52 @@ h2 {
     display: flex;
     align-items: center;
     margin-right: 80px;
+    color: white !important;
+
 
 }
+
+.bannerPart2Link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: rgb(26, 72, 19) !important;
+
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.3s;
+}
+
+.bannerPart2Link:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+    background-color: rgb(63, 131, 30)
+}
+
+.bannerPart2Link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 3px solid rgba(63, 131, 30, 0.5);
+    transform: scale(1.2, 1.2);
+}
+
+.bannerPart2Link:hover::after {
+    opacity: 1;
+    color: rgb(26, 72, 19) !important;
+
+    transform: scale(1, 1);
+}
+
 
 .bannerPart2LinkMobile {
     display: none;
@@ -119,7 +169,7 @@ h2 {
 
 .brand img {
     margin-left: 80px;
-    height: 70px;
+    height: 50px;
     width: auto;
     padding: 5px;
 }
@@ -146,7 +196,8 @@ h2 {
 .solution {
     height: auto;
     width: 100%;
-
+    background-image: url("./imgs/degrade-reverse.png");
+    color: white;
 
 }
 
@@ -168,28 +219,43 @@ h2 {
 .work {
     height: auto;
     flex-direction: row;
-
+    background-image: url('./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png');
+    background-size: 100%;
+    
 
 }
-
+.work-row{
+    background-size: cover;
+}
 .tattoos {
     height: auto;
     flex-direction: row;
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: rgb(232, 232, 232);
+    background-color: rgba(232, 232, 232, 0);
     margin-right: 80px;
     margin-left: 80px;
+    background-image: url("./imgs/Fundo\ verde\ e\ Padrão\ Verde\ Polkadot\ aniversário\ mensagem\ Irmãos\ \(Website\).png");
+    background-size:contain  ;
+
+    border: solid rgb(255, 255, 255);
+    border-bottom: none;
+
 
 }
+
 .art {
+    background-image: url("./imgs/Fundo\ verde\ e\ Padrão\ Verde\ Polkadot\ aniversário\ mensagem\ Irmãos\ \(Website\).png");
+background-size:contain  ;
     height: auto;
     flex-direction: row-reverse;
     display: flex;
-    background-color: rgb(232, 232, 232);
+    background-color: rgba(232, 232, 232, 0);
     margin-left: 80px;
     margin-right: 80px;
+    border: solid rgb(255, 255, 255);
+    border-bottom: none;
 
 
 }
@@ -221,13 +287,13 @@ h2 {
     position: static;
     display: flex;
     height: 0%;
-    width: 50%;
+    width: 70%;
     margin-top: 20px;
     padding: 30px;
     text-align: justify;
     padding-top: 17%;
     align-items: flex-end;
-
+    color: white;
 }
 
 
@@ -238,6 +304,7 @@ h2 {
     padding-left: 70px;
     background-image: url('../../imgs/2.png');
     background-size: cover;
+    background-image: url("./imgs/Fundo\ verde\ e\ Padrão\ Verde\ Polkadot\ aniversário\ mensagem\ Irmãos\ \(Website\).png");
 
 }
 
@@ -284,8 +351,8 @@ h2 {
 }
 
 .contact {
-    background-image: url('../../imgs/2.png');
-
+    background-image: url("./imgs/Fundo\ verde\ e\ Padrão\ Verde\ Polkadot\ aniversário\ mensagem\ Irmãos\ \(Website\).png");
+    color: #fff;
     background-color: rgb(120, 185, 112);
     padding-bottom: 20px;
 
@@ -419,8 +486,10 @@ input:focus {
 
     .brand img {
         margin-left: 20px;
-        height: 60px;
+        height: 50px;
         width: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .bannerPart2 {
@@ -459,17 +528,27 @@ input:focus {
         display: flex;
         flex-direction: column;
         bottom: 30px;
-        font-size: 35px;
         color: azure;
+        font-size: 20PX;
+
     }
 
     .bannerPart2Link {
         height: 0px;
         width: 0%;
         font-size: 0;
+
     }
 
     .bannerPart2LinkMobile {
+        border-color: rgb(63, 131, 30);
+        border-radius: 0;
+        color: rgb(63, 131, 30);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        -webkit-transition: color 150ms ease-in-out;
+        transition: color 150ms ease-in-out;
         height: 50px;
         width: 100%;
         font-size: 10px;
@@ -482,7 +561,31 @@ input:focus {
         text-decoration: none;
         font-size: 15px;
         background-color: white;
+    }
 
+    .bannerPart2LinkMobile:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 0;
+        height: 100%;
+        background: rgb(63, 131, 30);
+        ;
+        z-index: -1;
+        -webkit-transition: width 150ms ease-in-out;
+        transition: width 150ms ease-in-out;
+    }
+
+    .bannerPart2LinkMobile:hover {
+        color: white;
+    }
+
+    .bannerPart2LinkMobile:hover:after {
+        width: 110%;
     }
 
     .brandBanner img {
@@ -503,15 +606,18 @@ input:focus {
 
     .tattoos {
         height: auto;
-        background-color: antiquewhite;
+        background-color: rgba(250, 235, 215, 0);
         flex-direction: column;
         display: flex;
-        
+
     }
 
     .workSquare {
 
         height: auto;
+        justify-content: center;
+        display: flex;
+        margin: auto;
     }
 
     .square {
@@ -533,7 +639,7 @@ input:focus {
 
     .art {
         height: auto;
-        background-color: antiquewhite;
+        background-color: rgba(250, 235, 215, 0);
         flex-direction: column;
         display: flex;
     }
@@ -648,7 +754,7 @@ input:focus {
 
     .brand img {
         margin-left: 20px;
-        height: 60px;
+        height: 50px;
         width: auto;
     }
 
@@ -707,7 +813,16 @@ input:focus {
         font-size: 0;
 
     }
+
     .bannerPart2LinkMobile {
+        border-color: rgb(63, 131, 30);
+        border-radius: 0;
+        color: rgb(63, 131, 30);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        -webkit-transition: color 150ms ease-in-out;
+        transition: color 150ms ease-in-out;
         height: 50px;
         width: 100%;
         font-size: 10px;
@@ -722,21 +837,62 @@ input:focus {
         background-color: white;
     }
 
+    .bannerPart2LinkMobile:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 0;
+        height: 100%;
+        background: rgb(63, 131, 30);
+        ;
+        z-index: -1;
+        -webkit-transition: width 150ms ease-in-out;
+        transition: width 150ms ease-in-out;
+    }
+
+    .bannerPart2LinkMobile:hover {
+        color: #fff;
+    }
+
+    .bannerPart2LinkMobile:hover:after {
+        width: 110%;
+    }
+
     .work {
-        padding-left: 20px;
-        padding-right: 20px;
+        
         width: 100%;
         height: auto;
-        background-color: antiquewhite;
+        background-color: rgb(215, 250, 221);
         flex-direction: column;
         margin: auto;
+        justify-content: center;
     }
 
     .tattoos {
         height: auto;
-        background-color: antiquewhite;
+        width: 100%;
+        background-color: rgba(200, 151, 77, 0);
         flex-direction: column;
         display: flex;
+        padding-right: 0px;
+        padding-left: 00px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .art {
+        height: auto;
+        width: 100%;
+        background-color: rgba(250, 235, 215, 0);
+        flex-direction: column;
+        display: flex;
+        padding-right: 0px;
+        padding-left: 00px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
     .workSquare {
@@ -764,12 +920,7 @@ input:focus {
 
     }
 
-    .art {
-        height: auto;
-        background-color: antiquewhite;
-        flex-direction: column;
-        display: flex;
-    }
+    
 
     .solutionMain {
         padding: 60px;
