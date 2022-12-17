@@ -27,6 +27,7 @@ h2 {
     justify-content: center;
     font-size: 0px;
     font-weight: 600;
+    color: rgb(26, 72, 19);
     font-family: beardsons;
 
 }
@@ -120,7 +121,10 @@ h2 {
 
     transform: scale(1, 1);
 }
-
+#tattoButton{
+    width: 80%;
+    margin-bottom: 20px;
+}
 
 .bannerPart2LinkMobile {
     display: none;
@@ -196,8 +200,8 @@ h2 {
 .solution {
     height: auto;
     width: 100%;
-    background-image: url("./imgs/degrade-reverse.png");
-    color: white;
+    color: rgb(0, 0, 0);
+    z-index: 3;
 
 }
 
@@ -206,6 +210,7 @@ h2 {
     text-align: center;
     padding-right: 80px;
     padding-left: 80px;
+    z-index: 3;
 
 
 }
@@ -213,57 +218,71 @@ h2 {
 .solutionText {
     padding-right: 80px;
     padding-left: 80px;
+    color: rgb(26, 72, 19);
 
 }
 
 .work {
     height: auto;
     flex-direction: row;
-    background-image: url('./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png');
     background-size: 100%;
-    
+
 
 }
-.work-row{
-    background-size: cover;
+
+.work-row {
+    background-image: url("./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png");
+    background-size: contain;
 }
+
 .tattoos {
     height: auto;
     flex-direction: row;
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: rgba(232, 232, 232, 0);
-    margin-right: 80px;
-    margin-left: 80px;
-    background-image: url("./imgs/Fundo\ verde\ e\ Padrão\ Verde\ Polkadot\ aniversário\ mensagem\ Irmãos\ \(Website\).png");
-    background-size:contain  ;
-
-    border: solid rgb(255, 255, 255);
-    border-bottom: none;
+    background-color: rgb(226, 220, 220);
+    padding-right: 80px;
+    padding-left: 80px;
+    background-image: url('./imgs/backgroundWork.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 
 
 }
 
+.gallery__thumb {
+    margin-right: 10px !important;
+}
+
 .art {
-    background-image: url("./imgs/Fundo\ verde\ e\ Padrão\ Verde\ Polkadot\ aniversário\ mensagem\ Irmãos\ \(Website\).png");
-background-size:contain  ;
+    background-size: contain;
     height: auto;
     flex-direction: row-reverse;
     display: flex;
-    background-color: rgba(232, 232, 232, 0);
-    margin-left: 80px;
-    margin-right: 80px;
-    border: solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding-right: 80px;
+    padding-left: 80px;
     border-bottom: none;
+    background-image: url('./imgs/backgroundWork2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 
 
 }
 
 .workSquare {
-
+    padding: 20px;
+    max-width: 300px;
+    max-height: 300px;
     height: auto;
     width: auto;
+    display: flex;
+    margin: auto;
+    border: solid rgb(26, 72, 19) 1px;
+    background-image: url('./imgs/squareBackground.png');
+    background-size: contain;
+
 }
 
 .square {
@@ -274,10 +293,14 @@ background-size:contain  ;
     padding-right: 80px;
     padding-left: 80px;
     background-color: rgb(58, 47, 33);
+    z-index: 2;
+
+
 }
 
 #squareLeft {
     align-items: flex-end;
+
 
 }
 
@@ -293,33 +316,60 @@ background-size:contain  ;
     text-align: justify;
     padding-top: 17%;
     align-items: flex-end;
-    color: white;
+    color: rgb(26, 72, 19);
+    flex-direction: column;
+
 }
 
+.workText p {
+    margin-top: 40px;
+}
+
+.workText h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
 
 
 .galeryMain {
 
     padding-right: 80px;
     padding-left: 70px;
-    background-image: url('../../imgs/2.png');
-    background-size: cover;
-    background-image: url("./imgs/Fundo\ verde\ e\ Padrão\ Verde\ Polkadot\ aniversário\ mensagem\ Irmãos\ \(Website\).png");
+    background-color: aliceblue;
+}
+.galery{
+    text-align: justify;
+    color: rgb(26, 72, 19);
+    flex-direction: column;
 
 }
+.galery p{
+    margin-top: 40px;
 
+}
+.galery h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .break {
     height: 70px;
     width: 100%;
     justify-content: center;
     display: flex;
+    background: fixed;
     padding: 10px;
-    background-color: aliceblue;
-    background-image: url('./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png');
+    /* background-color: aliceblue; */
+    background-image: url(./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png);
     background-size: contain;
 
 }
-
+#breakPort{
+    position: relative;
+    width: calc(100% + 160px);
+    left: -80px;
+}
 .about {
     background-color: aliceblue;
     height: auto;
@@ -330,6 +380,7 @@ background-size:contain  ;
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 80px;
+
 }
 
 .aboutImg {
@@ -357,6 +408,8 @@ background-size:contain  ;
     padding-bottom: 20px;
 
 }
+
+
 
 .contactSection1 {
     margin-right: 80px;
@@ -484,6 +537,11 @@ input:focus {
 
 @media screen and (max-width: 1050px) and (min-width:590px) {
 
+    #breakPort{
+        position: relative;
+        width: calc(100% + 40px);
+        left: -20px;
+    }
     .brand img {
         margin-left: 20px;
         height: 50px;
@@ -541,9 +599,8 @@ input:focus {
     }
 
     .bannerPart2LinkMobile {
-        border-color: rgb(63, 131, 30);
         border-radius: 0;
-        color: rgb(63, 131, 30);
+        color: rgb(255, 255, 255);
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -556,11 +613,10 @@ input:focus {
         justify-content: center;
         display: flex;
         margin: auto;
-        border: solid 1px;
         align-items: center;
         text-decoration: none;
         font-size: 15px;
-        background-color: white;
+        background-color: rgb(26, 72, 19);
     }
 
     .bannerPart2LinkMobile:after {
@@ -573,7 +629,7 @@ input:focus {
         transform: translateX(-50%);
         width: 0;
         height: 100%;
-        background: rgb(63, 131, 30);
+        background: rgb(26, 72, 19);
         ;
         z-index: -1;
         -webkit-transition: width 150ms ease-in-out;
@@ -581,7 +637,7 @@ input:focus {
     }
 
     .bannerPart2LinkMobile:hover {
-        color: white;
+        color: rgb(255, 255, 255);
     }
 
     .bannerPart2LinkMobile:hover:after {
@@ -606,9 +662,14 @@ input:focus {
 
     .tattoos {
         height: auto;
-        background-color: rgba(250, 235, 215, 0);
+        background-color: rgb(138, 148, 138);
+
         flex-direction: column;
         display: flex;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('./imgs/backgroundWork.png');
+
 
     }
 
@@ -618,6 +679,8 @@ input:focus {
         justify-content: center;
         display: flex;
         margin: auto;
+        margin-top: 20px;
+
     }
 
     .square {
@@ -639,9 +702,14 @@ input:focus {
 
     .art {
         height: auto;
-        background-color: rgba(250, 235, 215, 0);
+        background-color: rgb(184, 213, 184);
+
         flex-direction: column;
         display: flex;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('./imgs/backgroundWork2.png');
+
     }
 
     .solutionMain {
@@ -751,7 +819,11 @@ input:focus {
 
 @media screen and (max-width:590px) {
 
-
+    #breakPort{
+        position: relative;
+        width: calc(100% + 40px);
+        left: -20px;
+    }
     .brand img {
         margin-left: 20px;
         height: 50px;
@@ -786,6 +858,7 @@ input:focus {
     .img {
 
         width: 100%;
+        height: 105%;
         background-size: cover;
         background-position: center;
         background-color: blue;
@@ -815,9 +888,8 @@ input:focus {
     }
 
     .bannerPart2LinkMobile {
-        border-color: rgb(63, 131, 30);
         border-radius: 0;
-        color: rgb(63, 131, 30);
+        color: rgb(255, 255, 255);
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -830,11 +902,10 @@ input:focus {
         justify-content: center;
         display: flex;
         margin: auto;
-        border: solid 1px;
         align-items: center;
         text-decoration: none;
         font-size: 15px;
-        background-color: white;
+        background-color: rgb(26, 72, 19);
     }
 
     .bannerPart2LinkMobile:after {
@@ -847,7 +918,7 @@ input:focus {
         transform: translateX(-50%);
         width: 0;
         height: 100%;
-        background: rgb(63, 131, 30);
+        background: rgb(26, 72, 19);
         ;
         z-index: -1;
         -webkit-transition: width 150ms ease-in-out;
@@ -855,7 +926,7 @@ input:focus {
     }
 
     .bannerPart2LinkMobile:hover {
-        color: #fff;
+        color: rgb(255, 255, 255);
     }
 
     .bannerPart2LinkMobile:hover:after {
@@ -863,7 +934,7 @@ input:focus {
     }
 
     .work {
-        
+
         width: 100%;
         height: auto;
         background-color: rgb(215, 250, 221);
@@ -875,29 +946,38 @@ input:focus {
     .tattoos {
         height: auto;
         width: 100%;
-        background-color: rgba(200, 151, 77, 0);
+        background-color: rgb(138, 148, 138);
+
         flex-direction: column;
         display: flex;
         padding-right: 0px;
         padding-left: 00px;
         margin-right: 0px;
         margin-left: 0px;
+        background-size: 0%;
+
     }
+
     .art {
         height: auto;
         width: 100%;
-        background-color: rgba(250, 235, 215, 0);
+        background-color: rgb(184, 213, 184);
+
         flex-direction: column;
         display: flex;
         padding-right: 0px;
         padding-left: 00px;
         margin-right: 0px;
         margin-left: 0px;
+        background-size: 0%;
+        background-repeat: no-repeat;
     }
 
     .workSquare {
 
         height: auto;
+        margin-top: 20px;
+
     }
 
     .square {
@@ -920,7 +1000,7 @@ input:focus {
 
     }
 
-    
+
 
     .solutionMain {
         padding: 60px;
