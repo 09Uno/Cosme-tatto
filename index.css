@@ -53,6 +53,7 @@ h2 {
     height: 370px;
     background-image: url('./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png');
     background-size: contain;
+
 }
 
 .bannerPart2 {
@@ -121,11 +122,15 @@ h2 {
 
     transform: scale(1, 1);
 }
+#tattobuttonPC{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
 #tattoButton{
-    width: -webkit-fill-available;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    margin-left: 50px;
+    display: none;
 }
 
 .bannerPart2LinkMobile {
@@ -137,9 +142,10 @@ h2 {
     height: 650px;
     width: 450px;
     display: flex;
-    background-image: url('./imgs/cosme.png');
+    background-image: url('./imgs/cosme-about-photo.png');
     background-size: cover;
     background-size: contain;
+    background-repeat: no-repeat;
     margin-top: 100px;
     z-index: 2;
     position: absolute;
@@ -194,10 +200,6 @@ h2 {
 }
 
 
-
-.about {
-    height: 600px;
-}
 
 .solution {
     height: auto;
@@ -371,21 +373,32 @@ h2 {
     width: 100%;
     justify-content: center;
     display: flex;
-    background: fixed;
     padding: 10px;
+    background-position: 100%;
     /* background-color: aliceblue; */
     background-image: url(./imgs/Fundo\ celular\ Papel\ eu\ confio\ branco\ e\ preto.png);
     background-size: contain;
+
+}
+#breakMain{
+        
+    background: fixed !important;
 
 }
 #breakPort{
     position: relative;
     width: calc(100% + 160px);
     left: -80px;
+    height: 00 !important;
 }
 .about {
-    background-color: aliceblue;
+    background-image: url('./imgs/cosme-about-background.png');
+    background-repeat: no-repeat;
+    background-color: #8ce08caf;
+    background-size: cover;
     height: auto;
+    height: 650px;
+    padding-top: 30px;
 }
 
 .aboutMain {
@@ -397,7 +410,10 @@ h2 {
 }
 
 .aboutImg {
-    background-color: aqua;
+
+    background-image: url('./imgs/CosmePhoto2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 40%;
     height: 600px;
 }
@@ -409,13 +425,15 @@ h2 {
     width: 50%;
     margin-top: 20px;
     padding: 30px;
-    text-align: justify;
+    text-align: center;
     padding-top: 17%;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact {
-    background-image: url("./imgs/Fundo\ verde\ e\ Padrão\ Verde\ Polkadot\ aniversário\ mensagem\ Irmãos\ \(Website\).png");
+    background-image: url("./imgs/degrade-reverse.png");
+    background-size: contain;
     color: #fff;
     background-color: rgb(120, 185, 112);
     padding-bottom: 20px;
@@ -432,7 +450,13 @@ h2 {
     justify-content: space-around;
 
 }
-
+.contactMain h2{
+    color: #fff;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
 .contactSocial {
     padding-left: 30px;
     margin: 20px;
@@ -492,6 +516,10 @@ h2 {
 
 
 }
+.contactEmail p{
+    align-self: center;
+    font-size: large;
+}
 
 .contactEmail textarea:focus,
 input:focus {
@@ -532,7 +560,35 @@ input:focus {
     height: 650px;
 }
 
+.aboutMain{
+    
+}
 
+.feedbackMain{
+    padding-right: 80px;
+    padding-left: 80px;
+    width: 100%;
+    height: auto;
+}
+
+.feedback{
+    height: auto;
+    width: 100%;
+    overflow-wrap: normal;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.feedbackSquare{
+    height: 300px;
+    width: 250px;
+    background-color: aquamarine;
+    margin: 20px;
+    min-width: 200px;
+    
+}
 
 @media screen and (max-width: 1051px) and (min-width:1500px) {
     .brandBanner {
@@ -550,17 +606,20 @@ input:focus {
 
 @media screen and (max-width: 1050px) and (min-width:590px) {
 
-    #tattoButton{
-        width: 0;
-        margin-bottom: 20px;
-        margin-left: 0px;
-        margin-right: 0px !important;
+
+    .feedbackMain{
+        padding-right: 0px;
+        padding-left: 0px;
     }
-    
+
+    #tattobuttonPC{
+        display: none;
+    }
     #breakPort{
         position: relative;
         width: calc(100% + 40px);
         left: -20px;
+        height: 00 !important;
     }
     .brand img {
         margin-left: 20px;
@@ -784,20 +843,22 @@ input:focus {
 
     .aboutImg {
         margin-top: 10px;
-        background-color: aqua;
-        width: 60%;
+        width: 50%;
         height: 600px;
+        align-self: center;
     }
-
+    
     .aboutText {
         position: static;
         display: flex;
         height: 0%;
         width: 60%;
         padding: 20px;
-        text-align: justify;
-        align-items: flex-end;
-    }
+        text-align: center;
+        align-items: center;
+    } 
+
+    
 
     .contactSection1 {
         margin-left: 20px;
@@ -841,20 +902,40 @@ input:focus {
         width: 100%;
         height: 650px;
     }
+    #tattoButton{
+        
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
 @media screen and (max-width:590px) {
+    #tattobuttonPC{
+        display: none;
+    }
+    .feedbackMain{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
     #tattoButton{
-        width: 100%;
+        
         margin-bottom: 20px;
-        margin-left: 0px;
-        margin-right: 0px !important;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
     #breakPort{
         position: relative;
         width: calc(100% + 40px);
         left: -20px;
+        height: 00 !important;
     }
     .brand img {
         margin-left: 20px;
@@ -890,7 +971,7 @@ input:focus {
     .img {
 
         width: 100%;
-        height: 105%;
+        height: 700PX;
         background-size: cover;
         background-position: center;
         background-color: rgb(255, 255, 255);
@@ -1090,7 +1171,6 @@ input:focus {
 
     .aboutImg {
         margin-top: 10px;
-        background-color: aqua;
         width: 100%;
         height: 500px;
     }
@@ -1102,8 +1182,11 @@ input:focus {
         width: 100%;
         padding: 20px;
         text-align: center;
-        align-items: flex-end;
-    }
+        align-items: center;
+    } 
+
+    
+
 
     .contactSection1 {
         margin-left: 20px;

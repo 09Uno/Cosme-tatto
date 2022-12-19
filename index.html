@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/galery.css">
     <link rel="stylesheet" href="assets/css/responsiveMenu.css">
-
+    <link rel="stylesheet" href="/assets/css/bouncingButton.css">
 
 
     <meta charset="utf-8">
@@ -92,7 +92,7 @@
     </header>
 
     <main class="main">
-        <div class="break"></div>
+        <div class="break" id="breakMain"></div>
         <div class="solution">
             <div class="solutionMain">
                 <div class="solutionText">
@@ -347,7 +347,7 @@
 
 
                     </div>
-                    <a class="bannerPart2Link" id="tattoButton" href="">FAÇA SUA TATTOO</a>
+                    <a class="bannerPart2Link" id="tattobuttonPC" href="">FAÇA SUA TATTOO</a>
                     <a class="bannerPart2LinkMobile" id="tattoButton" href="">FAÇA SUA TATTOO</a>
 
                     <div class="break" id="breakPort"></div>
@@ -361,95 +361,95 @@
                         rel="stylesheet">
 
                     <div class="gallery">
-                            <div class="gallery__column">
-                                <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
-                                    <figure class="gallery__thumb">
-                                        <img src="https://source.unsplash.com/_cvwXhGqG-o/300x300"
-                                            alt="Portrait by Jessica Felicio" class="gallery__image">
-                                        <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
-                                    </figure>
-                                </a>
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/_cvwXhGqG-o/300x300"
+                                        alt="Portrait by Jessica Felicio" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
+                                </figure>
+                            </a>
 
 
 
-                                <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
-                                    <figure class="gallery__thumb">
-                                        <img src="https://source.unsplash.com/VLPLo-GtrIE/300x300"
-                                            alt="Portrait by Alex Perez" class="gallery__image">
-                                        <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <div class="gallery__column">
-                                <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
-                                    <figure class="gallery__thumb">
-                                        <img src="https://source.unsplash.com/AR7aumwKr2s/300x300"
-                                            alt="Portrait by Noah Buscher" class="gallery__image">
-                                        <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
-                                    </figure>
-                                </a>
-
-                                <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
-                                    <figure class="gallery__thumb">
-                                        <img src="https://source.unsplash.com/dnL6ZIpht2s/300x300"
-                                            alt="Portrait by Ivana Cajina" class="gallery__image">
-                                        <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
-                                    </figure>
-                                </a>
-
-
-                            </div>
-
-                            <div class="gallery__column">
-
-                                <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
-                                    <figure class="gallery__thumb">
-                                        <img src="https://source.unsplash.com/NTjSR3zYpsY/300x300"
-                                            alt="Portrait by Ethan Haddox" class="gallery__image">
-                                        <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
-                                    </figure>
-                                </a>
-
-                                <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
-                                    <figure class="gallery__thumb">
-                                        <img src="https://source.unsplash.com/2JH8d3ChNec/300x300"
-                                            alt="Portrait by Amir Geshani" class="gallery__image">
-                                        <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <div class="gallery__column">
-                                <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
-                                    <figure class="gallery__thumb">
-                                        <img src="https://source.unsplash.com/FQhLLehm4dk/300x300"
-                                            alt="Portrait by Guilian Fremaux" class="gallery__image">
-                                        <figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
-                                    </figure>
-                                </a>
-
-                                <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
-                                    <figure class="gallery__thumb">
-                                        <img src="https://source.unsplash.com/OQd9zONSx7s/300x300"
-                                            alt="Portrait by Jasmin Chew" class="gallery__image">
-                                        <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
-                                    </figure>
-                                </a>
-
-
-                            </div>
-                            
+                            <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/VLPLo-GtrIE/300x300"
+                                        alt="Portrait by Alex Perez" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
+                                </figure>
+                            </a>
                         </div>
-                    
+
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/AR7aumwKr2s/300x300"
+                                        alt="Portrait by Noah Buscher" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/dnL6ZIpht2s/300x300"
+                                        alt="Portrait by Ivana Cajina" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
+                                </figure>
+                            </a>
+
+
+                        </div>
+
+                        <div class="gallery__column">
+
+                            <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/NTjSR3zYpsY/300x300"
+                                        alt="Portrait by Ethan Haddox" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/2JH8d3ChNec/300x300"
+                                        alt="Portrait by Amir Geshani" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/FQhLLehm4dk/300x300"
+                                        alt="Portrait by Guilian Fremaux" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/OQd9zONSx7s/300x300"
+                                        alt="Portrait by Jasmin Chew" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
+                                </figure>
+                            </a>
+
+
+                        </div>
+
                     </div>
-                    <a class="bannerPart2Link" id="tattoButton" href="">ENCOMENDE SEU QUADRO</a>
-                    <a class="bannerPart2LinkMobile" id="tattoButton" href="">ENCOMENDE SEU QUADRO</a>
-                    <div class="break" id="breakPort"></div>
 
                 </div>
+                <a class="bannerPart2Link" id="tattobuttonPC" href="">ENCOMENDE SEU QUADRO</a>
+                <a class="bannerPart2LinkMobile" id="tattoButton" href="">ENCOMENDE SEU QUADRO</a>
+                <div class="break" id="breakPort"></div>
 
             </div>
+
+        </div>
 
 
 
@@ -458,15 +458,16 @@
 
         </div>
 
-    
+
         <div href="#contact" class="about">
             <div class="aboutMain">
                 <div class="aboutImg">
 
                 </div>
                 <div class="aboutText">
+                    <h2>sobre cosme</h2>
                     <p class="aboutP">
-                        Cosme</br>
+
                         </br>
                         sum is simps a long established fact that a reader will
                         be distracted by the readable content of a page when looking at its layout.
@@ -491,16 +492,35 @@
             </div>
         </div>
 
+        <div class="feedbackMain">
+            <h2>feedbacks</h2>
+            <div class="feedback">
+                <div class="feedbackSquare">
+
+                </div>
+                <div class="feedbackSquare">
+
+                </div>
+                <div class="feedbackSquare">
+
+                </div>
+                <div class="feedbackSquare">
+
+                </div>
+            </div>
+        </div>
+
+
         <div class="contact">
             <div class="break">
             </div>
             <div class="contactMain">
+                <h2>entre em contato com cosmeculztattoo</h2>
 
                 <div class="contactSection1">
-
                     <div class="contactSocial">
                         <div class="icon">
-                            <a href="" class="socialIcon"><i class="fa-brands fa-whatsapp fa-3x"></i></a> <span>111
+                            <a href="" class="socialIcon"><i class="fa-brands fa-whatsapp fa-2x"></i></a> <span>111
                                 111123123</span>
                         </div>
 
@@ -532,6 +552,7 @@
 
                     <div class="contactEmail">
                         <form action="">
+                            <p>MANDE SEU EMAIL</p>
                             <input type="text" placeholder="Nome">
                             <input type="text" placeholder="Email">
                             <input type="text" placeholder="Assunto">
@@ -543,13 +564,14 @@
                 </div>
 
             </div>
-            <div class="contactSection2">
 
-            </div>
 
 
         </div>
-
+        <a class="order" href="https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
         <footer>
             <span>Criado por <a href="https://www.codetoyou.com.br">Code to you</a> | Todos os direitos reservado
                 2022</span>
@@ -570,3 +592,4 @@
 <script src="https://kit.fontawesome.com/b49927e337.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
     defer></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
