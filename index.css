@@ -122,8 +122,10 @@ h2 {
     transform: scale(1, 1);
 }
 #tattoButton{
-    width: 80%;
+    width: -webkit-fill-available;
     margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .bannerPart2LinkMobile {
@@ -241,7 +243,7 @@ h2 {
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: rgb(226, 220, 220);
+    background-color: rgba(138, 148, 138, 0.698);
     padding-right: 80px;
     padding-left: 80px;
     background-image: url('./imgs/backgroundWork.png');
@@ -260,7 +262,8 @@ h2 {
     height: auto;
     flex-direction: row-reverse;
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: #b8d5b8a3;
+
     padding-right: 80px;
     padding-left: 80px;
     border-bottom: none;
@@ -337,21 +340,31 @@ h2 {
 
     padding-right: 80px;
     padding-left: 70px;
-    background-color: aliceblue;
+    background-color: #b8d5b887;
 }
 .galery{
     text-align: justify;
     color: rgb(26, 72, 19);
     flex-direction: column;
+    
 
+}
+.galery1{
 }
 .galery p{
     margin-top: 40px;
 
 }
-.galery h2{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.artGalery{
+
+}
+.galeryMain h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: url('./imgs/galeryBackground\ \(2\).png');
+    background-position: center;
+    background-size: calc(11%);
+    background-color: rgba(255, 255, 255, 0);
 }
 .break {
     height: 70px;
@@ -537,6 +550,13 @@ input:focus {
 
 @media screen and (max-width: 1050px) and (min-width:590px) {
 
+    #tattoButton{
+        width: 0;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+    
     #breakPort{
         position: relative;
         width: calc(100% + 40px);
@@ -565,7 +585,8 @@ input:focus {
         background-size: cover;
         background-position: center;
         width: 75%;
-        background-color: blue;
+        height: calc(700px);
+        background-color: rgb(255, 255, 255);
         display: flex;
         margin-top: 80px;
         justify-content: center;
@@ -662,17 +683,18 @@ input:focus {
 
     .tattoos {
         height: auto;
-        background-color: rgb(138, 148, 138);
+        background-color: rgba(138, 148, 138, 0.698);
+
 
         flex-direction: column;
         display: flex;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url('./imgs/backgroundWork.png');
+        background-image: url('./imgs/backgroundWorkMobile.png');
 
 
     }
-
+    
     .workSquare {
 
         height: auto;
@@ -696,19 +718,21 @@ input:focus {
         height: 0%;
         width: 100%;
         padding-top: 0;
-        text-align: center;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
 
     }
 
     .art {
         height: auto;
-        background-color: rgb(184, 213, 184);
+        background-color: #b8d5b8a3;
+
 
         flex-direction: column;
         display: flex;
         background-size: 100%;
-        background-repeat: no-repeat;
-        background-image: url('./imgs/backgroundWork2.png');
+        background-image: url('./imgs/backgroundWorkMobile2.png');
 
     }
 
@@ -736,7 +760,10 @@ input:focus {
         padding-right: 20px;
 
     }
-
+    .galeryMain h2{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
     .about {
         background-color: aliceblue;
         height: auto;
@@ -818,7 +845,12 @@ input:focus {
 }
 
 @media screen and (max-width:590px) {
-
+    #tattoButton{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
     #breakPort{
         position: relative;
         width: calc(100% + 40px);
@@ -946,7 +978,8 @@ input:focus {
     .tattoos {
         height: auto;
         width: 100%;
-        background-color: rgb(138, 148, 138);
+        background-color: rgba(138, 148, 138, 0.698);
+
 
         flex-direction: column;
         display: flex;
@@ -961,7 +994,8 @@ input:focus {
     .art {
         height: auto;
         width: 100%;
-        background-color: rgb(184, 213, 184);
+        background-color: #b8d5b8a3;
+
 
         flex-direction: column;
         display: flex;
@@ -1032,7 +1066,10 @@ input:focus {
         padding-right: 20px;
 
     }
-
+    .galeryMain h2{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
     .about {
         background-color: aliceblue;
         height: auto;
