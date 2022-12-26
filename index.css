@@ -22,6 +22,27 @@ header {
 
 }
 
+footer{
+    height: auto;
+    width: 100%;
+    align-items: center;
+    color: rgb(26, 72, 19);
+    display: flex;
+    background-color: rgb(165, 178, 152);
+    flex-direction: column;
+    padding: 20px;
+}
+footer a {
+    text-decoration: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+
+footer a:hover {
+    text-decoration: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
 h2 {
     display: flex;
     justify-content: center;
@@ -392,9 +413,8 @@ h2 {
     height: 00 !important;
 }
 .about {
-    background-image: url('./imgs/cosme-about-background.png');
     background-repeat: no-repeat;
-    background-color: #8ce08caf;
+    background-color: #6ea76eaf;
     background-size: cover;
     height: auto;
     height: 650px;
@@ -433,7 +453,7 @@ h2 {
 
 .contact {
     background-image: url("./imgs/degrade-reverse.png");
-    background-size: contain;
+    background-size: 100%;
     color: #fff;
     background-color: rgb(120, 185, 112);
     padding-bottom: 20px;
