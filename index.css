@@ -15,7 +15,7 @@ a:hover {
 
 body {
     margin: 0;
-    background-image: url('./imgs/background\ full.png');
+    background-image: url('./imgs/background\ full\ .png    ');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -255,7 +255,7 @@ h2 {
     height: auto;
     flex-direction: row;
     background-size: 100%;
-
+    
 
 }
 
@@ -269,11 +269,11 @@ h2 {
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: rgba(138, 148, 138, 0.479);
+    background-color: rgba(138, 148, 138, 0.083);
 
     padding-right: 80px;
     padding-left: 80px;
-    background-image: url('./imgs/backgroundWork.png');
+    background-image: url('./imgs/backgroundWorkMobile.png');
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -289,13 +289,13 @@ h2 {
     height: auto;
     flex-direction: row-reverse;
     display: flex;
-    background-color: #b8d5b832;
+    background-color: #b8d5b815;
     justify-content:center;
 
     padding-right: 80px;
     padding-left: 80px;
     border-bottom: none;
-    background-image: url('./imgs/backgroundWork2.png');
+    background-image: url('./imgs/backgroundWorkMobile2.png');
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -314,6 +314,7 @@ h2 {
     margin: auto;
     border: solid rgb(26, 72, 19) 1px;
     background-image: url('./imgs/squareBackground.png');
+    
     background-size: contain;
 
 }
@@ -375,21 +376,27 @@ display: flex;
     padding-left: 70px;
     background-color: #b8d5b832;
 
+    background-repeat: no-repeat;
 }
 .galery{
     text-align: justify;
     color: rgb(26, 72, 19);
-    flex-direction: column;
+    flex-direction: column; 
+    background-image: url('./imgs/backgroundWorkMobile.png');
+
     
 
 }
 .galery1{
+        background-image: url('./imgs/backgroundWork.png');
 }
 .galery p{
     margin-top: 40px;
 
 }
 .artGalery{
+
+    background-image: url('./imgs/backgroundWorkMobile.png');
 
 }
 .galeryMain h2{
@@ -423,9 +430,9 @@ display: flex;
 }
 .about {
     background-repeat: no-repeat;
-    background-color: rgba(138, 148, 138, 0.479);
+    background-color: rgba(138, 148, 138, 0.13);
 
-    background-image: url('./imgs/backgroundWork2.png');
+    background-image: url('./imgs/backgroundWorkMobile2.png');
 
     background-size: cover;
     height: auto;
@@ -461,6 +468,13 @@ display: flex;
     padding-top: 17%;
     align-items: center;
     flex-direction: column;
+}
+.feedbackMain{
+    background-image: url('./imgs/backgroundWorkMobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #b8d5b832;
+
 }
 
 .contact {
@@ -602,6 +616,8 @@ input:focus {
     width: 100%;
     height: auto;
     background-color: #b8d5b832;
+    background-repeat: no-repeat;
+    background-size: contain;
 
 }
 
@@ -644,8 +660,12 @@ input:focus {
     .feedbackMain{
         padding-right: 0px;
         padding-left: 0px;
+        
     }
-
+    .feedback{
+        background-image: url('./imgs/backgroundWorkCel2.png');
+        background-size: cover;
+    }
     #tattobuttonPC{
         display: none;
     }
@@ -764,26 +784,29 @@ input:focus {
         display: none;
         width: 0;
     }
+    .galery{
+        background-image: url('./imgs/backgroundWorkCel.png');
 
+    }
 
     .work {
         width: 100%;
         height: auto;
-        background-color: antiquewhite;
+        background-color: #b8d5b815;
         flex-direction: column;
         margin: auto;
     }
 
     .tattoos {
         height: auto;
-        background-color: rgba(138, 148, 138, 0.698);
-
+        background-color: #b8d5b815;
 
         flex-direction: column;
         display: flex;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url('./imgs/backgroundWorkMobile.png');
+        background-image: url('./imgs/backgroundWorkCel2.png');
+
 
 
     }
@@ -819,13 +842,12 @@ input:focus {
 
     .art {
         height: auto;
-        background-color: #b8d5b8a3;
 
 
         flex-direction: column;
         display: flex;
         background-size: 100%;
-        background-image: url('./imgs/backgroundWorkMobile2.png');
+        background-image: url('./imgs/backgroundWorkCel.png');
 
     }
 
@@ -857,10 +879,12 @@ input:focus {
         padding-bottom: 5px;
     }
     .about {
-        background-color: aliceblue;
         height: auto;
         display: flex;
         flex-direction: column;
+        background-image: url('./imgs/backgroundWorkCel.png');
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .aboutMain {
@@ -879,6 +903,9 @@ input:focus {
         width: 50%;
         height: 600px;
         align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    
     }
     
     .aboutText {
@@ -953,6 +980,11 @@ input:focus {
     .feedbackMain{
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .feedback{
+        background-image: url('./imgs/backgroundWorkCel.png');
+        background-size: 140%;
+        background-repeat: no-repeat;
     }
     #tattoButton{
         
@@ -1081,16 +1113,18 @@ input:focus {
 
         width: 100%;
         height: auto;
-        background-color: rgb(215, 250, 221);
         flex-direction: column;
         margin: auto;
         justify-content: center;
+        background-color: #b8d5b815;
+    
+    
+
     }
 
     .tattoos {
         height: auto;
         width: 100%;
-        background-color: rgba(138, 148, 138, 0.698);
 
 
         flex-direction: column;
@@ -1099,15 +1133,18 @@ input:focus {
         padding-left: 00px;
         margin-right: 0px;
         margin-left: 0px;
-        background-size: 0%;
+            background-size: 140%;
+        background-image: url('./imgs/backgroundWorkCel2.png');
+        background-size: contain;
 
     }
 
     .art {
         height: auto;
         width: 100%;
-        background-color: #b8d5b8a3;
-
+    
+        background-image: url('./imgs/backgroundWorkCel.png');
+        background-size: contain;
 
         flex-direction: column;
         display: flex;
@@ -1115,7 +1152,7 @@ input:focus {
         padding-left: 00px;
         margin-right: 0px;
         margin-left: 0px;
-        background-size: 0%;
+        background-size: 140%;
         background-repeat: no-repeat;
     }
 
@@ -1171,18 +1208,25 @@ input:focus {
         align-items: center;
 
     }
+    .galery{
+        background-image: url('./imgs/backgroundWorkCel.png');
+        background-size: contain;
 
+    }
     .galeryMain {
 
         padding-left: 20px;
         padding-right: 20px;
-
+        background-color: #09a20911;
+        
     }
     .galeryMain h2{
         padding-bottom: 5px;
     }
     .about {
-        background-color: aliceblue;
+        background-color: #b8d5b815;
+        background-image: url('./imgs/backgroundWorkCel2.png');
+        background-size: contain;
         height: auto;
         display: flex;
         flex-direction: column;
