@@ -166,9 +166,8 @@ h2 {
     height: 650px;
     width: 450px;
     display: flex;
-    background-image: url('./imgs/cosme-about-photo.png');
+    background-image: url('./imgs/imgs-cosme/2.jpg');
     background-size: cover;
-    background-size: contain;
     background-repeat: no-repeat;
     margin-top: 100px;
     z-index: 2;
@@ -450,10 +449,10 @@ display: flex;
 
 .aboutImg {
 
-    background-image: url('./imgs/CosmePhoto2.png');
+    background-image: url('./imgs/imgs-cosme/1.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 40%;
+    width: 50%;
     height: 600px;
 }
 
@@ -697,14 +696,15 @@ input:focus {
     .img {
         background-size: cover;
         background-position: center;
-        width: 75%;
-        height: calc(700px);
+        width: 55%;
+        height: calc(699\px);
         background-color: rgb(255, 255, 255);
         display: flex;
         margin-top: 80px;
         justify-content: center;
         z-index: 2;
-        margin-left: 15%;
+        margin-left: 23%;
+        margin-right: 23%;
 
     }
 
@@ -720,7 +720,8 @@ input:focus {
         display: flex;
         flex-direction: column;
         bottom: 30px;
-        color: azure;
+        color: #133522;
+        font-weight: bolder;
         font-size: 20PX;
 
     }
