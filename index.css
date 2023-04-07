@@ -15,13 +15,18 @@ a:hover {
 
 body {
     margin: 0;
-    background-image: url('./imgs/background\ full\ .png    ');
+    background-image: url('./imgs/background\ full\ .png ');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header {
     height: auto;
+
+}
+
+.slider-container {
+    --swiffy-slider-item-gap-totalwidth: 0 !important;
 
 }
 
@@ -41,6 +46,9 @@ footer a {
     color: rgb(0, 0, 0) !important;
 }
 
+#img-slider-1{
+    background-image: url(./imgs/galery/2.jpg);
+}
 
 footer a:hover {
     text-decoration: none !important;
@@ -305,7 +313,7 @@ h2 {
 }
 
 .workSquare {
-    padding: 30px;
+    padding: 10px;
     justify-content: center;
 
     max-width: 300px;
@@ -314,8 +322,8 @@ h2 {
     width: auto;
     display: flex;
     margin: auto;
-    border: solid rgb(26, 72, 19) 1px;
-    background-image: url('./imgs/squareBackground.png');
+    /* border: solid rgb(26, 72, 19) 1px;
+    background-image: url('./imgs/squareBackground.png'); */
 
     background-size: contain;
 
@@ -376,7 +384,7 @@ h2 {
 
     padding-right: 80px;
     padding-left: 70px;
-    background-color: #b8d5b832;
+    background-color: #b8d5b80f;
 
     background-repeat: no-repeat;
 }
@@ -485,7 +493,7 @@ h2 {
     background-image: url('./imgs/backgroundWorkMobile.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #b8d5b832;
+    background-color: #b8d5b80f;
 
 }
 
@@ -628,7 +636,7 @@ input:focus {
     padding-left: 80px;
     width: 100%;
     height: auto;
-    background-color: #b8d5b832;
+    background-color: #b8d5b80f;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -646,10 +654,9 @@ input:focus {
 
 .feedbackSquare {
     height: 300px;
-    width: 250px;
+    width: 300px;
     background-color: aquamarine;
-    margin: 20px;
-    min-width: 200px;
+
 
 }
 
@@ -743,7 +750,6 @@ input:focus {
         font-size: 15PX;
         text-align: justify;
         font-weight: 500;
-
 
     }
 
