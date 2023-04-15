@@ -177,8 +177,8 @@ h2 {
     height: 650px;
     width: 450px;
     display: flex;
-    background-image: url('./imgs/imgs-cosme/19.jpg');
-    background-size: cover;
+    background-image: url('./imgs/galery/122.jpg');
+    background-size: contain;
     background-repeat: no-repeat;
     margin-top: 100px;
     z-index: 2;
